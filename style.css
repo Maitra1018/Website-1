@@ -1,4 +1,4 @@
-/* General Reset */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +6,11 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  color: #333;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 /* Header */
@@ -16,63 +19,90 @@ header {
   color: white;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
 
 header .logo {
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
 }
 
 nav a {
   color: white;
-  margin: 0 10px;
+  margin: 0 15px;
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
-nav a.active {
-  text-decoration: underline;
+nav a:hover, nav a.active {
+  color: #ff6600;
 }
 
-/* Hero Section */
-.hero {
-  background: url('images/hero.jpg') center/cover no-repeat;
-  height: 350px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
+/* Buttons */
 .btn {
+  display: inline-block;
+  padding: 12px 24px;
   background: #ff6600;
   color: white;
-  padding: 10px 20px;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s;
 }
 
-/* Highlights */
+.btn:hover {
+  background: #e65c00;
+  transform: scale(1.05);
+}
+
+/* Sections */
+section {
+  padding: 3rem 2rem;
+}
+
+h1, h2, h3, h4 {
+  color: #003366;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+/* Highlights / Cards */
 .highlights {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  padding: 2rem;
-  background: #f4f4f4;
+  gap: 1.5rem;
 }
 
-.highlights .card {
+.card {
   background: white;
-  padding: 1rem;
+  padding: 1.5rem;
   text-align: center;
-  width: 30%;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive Grid (Products, Gallery) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
 }
 
 /* Footer */
@@ -80,6 +110,7 @@ footer {
   background: #003366;
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 1.2rem;
   margin-top: 2rem;
+  font-size: 0.9rem;
 }
