@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Jai Jalaram Engineering</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .products-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .product-card {
+      background: #f4f4f4;
+      padding: 1rem;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .product-card img {
+      max-width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .product-card h3 {
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+    .download-btn {
+      display: block;
+      text-align: center;
+      margin: 2rem auto;
+      padding: 10px 20px;
+      background: #ff6600;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      width: 220px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <div class="logo">Jai Jalaram Engineering</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <h1 style="text-align:center; margin-top: 2rem;">Our Products</h1>
+  <p style="text-align:center;">We manufacture a wide range of precision engineering products.</p>
+
+  <section class="products-container">
+
+    <!-- Sample Real Products -->
+    <div class="product-card">
+      <img src="images/product1.jpg" alt="Ball Valves">
+      <h3>Ball Valves</h3>
+      <p>High quality ball valves used in industrial applications for reliable performance.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/product2.jpg" alt="Flanges">
+      <h3>Flanges</h3>
+      <p>Durable forged flanges available in various sizes for heavy-duty operations.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/product3.jpg" alt="Pipe Fittings">
+      <h3>Pipe Fittings</h3>
+      <p>Precision engineered pipe fittings ensuring perfect connectivity and strength.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/product4.jpg" alt="Couplings">
+      <h3>Couplings</h3>
+      <p>Strong couplings designed for leak-proof and long-lasting connections.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/product5.jpg" alt="Adapters">
+      <h3>Adapters</h3>
+      <p>High precision adapters for various pipe and equipment configurations.</p>
+    </div>
+
+  </section>
+
+  <!-- Catalog Download -->
+  <a class="download-btn" href="JJE_Catalog.pdf" target="_blank">📥 Download Full Catalog</a>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Jai Jalaram Engineering. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
