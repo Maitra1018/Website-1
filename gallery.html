@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Jai Jalaram Engineering</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .gallery-container img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+      transition: transform 0.3s;
+    }
+    .gallery-container img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <div class="logo">Jai Jalaram Engineering</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Gallery Section -->
+  <h1 style="text-align:center; margin-top:2rem;">Our Gallery</h1>
+  <section class="gallery-container">
+    <img src="images/product1.jpg" alt="Ball Valves">
+    <img src="images/product2.jpg" alt="Flanges">
+    <img src="images/product3.jpg" alt="Pipe Fittings">
+    <img src="images/product4.jpg" alt="Couplings">
+    <img src="images/product5.jpg" alt="Adapters">
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Jai Jalaram Engineering. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
