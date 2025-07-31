@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Jai Jalaram Engineering</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Contact Page Specific */
+    .contact-header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: linear-gradient(to right, #003366, #0055aa);
+      color: white;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .contact-info {
+      flex: 1;
+      min-width: 300px;
+      background: #f4f4f4;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .contact-info h3 {
+      margin-bottom: 1rem;
+      color: #003366;
+    }
+
+    .contact-info p {
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .contact-form {
+      flex: 1;
+      min-width: 300px;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .contact-form label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      margin-top: 15px;
+      padding: 12px;
+      width: 100%;
+      background: #ff6600;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: #e65c00;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="logo">Jai Jalaram Engineering</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <section class="contact-header">
+    <h1>Get in Touch</h1>
+    <p>We’d love to hear from you. Please fill out the form below or contact us directly.</p>
+  </section>
+
+  <!-- Contact Info + Form -->
+  <div class="contact-container">
+    <!-- Left: Contact Info -->
+    <div class="contact-info">
+      <h3>Contact Information</h3>
+      <p>📍 Address: Plot No. XX, Industrial Area, City, India</p>
+      <p>📞 Phone: +91 98765 43210</p>
+      <p>📧 Email: info@jje.com</p>
+    </div>
+
+    <!-- Right: Contact Form -->
+    <div class="contact-form">
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Jai Jalaram Engineering. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
